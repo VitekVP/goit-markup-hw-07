@@ -1,10 +1,9 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section;
 }
 
 .section--not-padding {
-  padding-top: 0;
+  @include section(0, 94px);
 }
 
 .section--dark {
@@ -13,12 +12,4 @@
 
 .section__title {
   margin-bottom: 50px;
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--color-title);
 }

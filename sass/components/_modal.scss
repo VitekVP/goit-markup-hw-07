@@ -69,14 +69,14 @@
   transition-property: fill;
   transition-duration: var(--anim-time);
   transition-timing-function: var(--anim-ft);
+
+  &:hover {
+    fill: var(--color-accent);
+  }
 }
 
 .modal__btn {
   fill: #000000;
-}
-
-.modal__btn:hover {
-  fill: var(--color-accent);
 }
 
 .modal__title {
@@ -118,10 +118,10 @@
   transition-property: border;
   transition-duration: var(--anim-time);
   transition-timing-function: var(--anim-ft);
-}
 
-.modal-form__field:focus {
-  border: 1px solid var(--color-accent);
+  &:focus {
+    border: 1px solid var(--color-accent);
+  }
 }
 
 .modal-form__icon {
@@ -161,10 +161,10 @@
   transition-property: border;
   transition-duration: var(--anim-time);
   transition-timing-function: var(--anim-ft);
-}
 
-.modal-form__comment:focus {
-  border: 1px solid var(--color-accent);
+  &:focus {
+    border: 1px solid var(--color-accent);
+  }
 }
 
 .modal-form__comment::placeholder {
@@ -206,12 +206,12 @@
   transition-property: border, background-color, background-size;
   transition-duration: var(--anim-time);
   transition-timing-function: var(--anim-ft);
-}
 
-.modal-form__checkbox:checked {
-  border: transparent;
-  background-color: var(--color-accent);
-  background-size: 11px 8px;
+  &:checked {
+    border: transparent;
+    background-color: var(--color-accent);
+    background-size: 11px 8px;
+  }
 }
 
 .modal-form__link {

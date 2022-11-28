@@ -11,11 +11,16 @@
   transition-property: color;
   transition-duration: var(--anim-time);
   transition-timing-function: var(--anim-ft);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
 }
 
-.nav__link:hover,
-.nav__link:focus {
-  color: var(--color-accent);
+.nav__link {
+  padding-top: 32px;
+  padding-bottom: 31px;
 }
 
 .nav__link--current {
@@ -39,9 +44,4 @@
   display: flex;
   align-items: center;
   gap: 50px;
-}
-
-.nav__link {
-  padding-top: 32px;
-  padding-bottom: 31px;
 }

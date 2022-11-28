@@ -25,21 +25,21 @@
   transition-property: color, background-color;
   transition-duration: var(--anim-time);
   transition-timing-function: var(--anim-ft);
-}
 
-.socials__icon {
-  fill: currentColor;
-}
+  &:hover,
+  &:focus {
+    color: var(--basic-white-color);
 
-.socials__link:hover,
-.socials__link:focus {
-  color: var(--basic-white-color);
-
-  background-color: #2196f3;
+    background-color: #2196f3;
+  }
 }
 
 .socials__link--dark {
   background-color: #ffffff1a;
+}
+
+.socials__icon {
+  fill: currentColor;
 }
 
 .socials__icon--white {

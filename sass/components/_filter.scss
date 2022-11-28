@@ -1,3 +1,11 @@
+.filter {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 .filter__button {
   display: flex;
   justify-content: center;
@@ -18,21 +26,13 @@
   transition-property: color, background-color, box-shadow;
   transition-duration: var(--anim-time);
   transition-timing-function: var(--anim-ft);
-}
 
-.filter {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
+  &:hover,
+  &:focus {
+    color: var(--basic-white-color);
 
-.filter__button:hover,
-.filter__button:focus {
-  color: var(--basic-white-color);
+    background-color: var(--color-accent);
 
-  background-color: var(--color-accent);
-
-  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+    box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+  }
 }
