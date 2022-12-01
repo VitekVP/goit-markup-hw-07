@@ -1,4 +1,4 @@
-.nav__link {
+.nav-list__link {
   position: relative;
 
   font-weight: 500;
@@ -18,18 +18,18 @@
   }
 }
 
-.nav__link {
+.nav-list__link {
   padding-top: 32px;
   padding-bottom: 31px;
 }
 
-.nav__link--current {
+.nav-list__link--current {
   color: var(--color-accent);
 }
 
-.nav__link--current::after {
+.nav-list__link--current::after {
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: 0;
 
   content: '';
@@ -40,7 +40,7 @@
   background-color: var(--color-accent);
 }
 
-.nav__list {
+.nav-list {
   display: flex;
   align-items: center;
   gap: 50px;
